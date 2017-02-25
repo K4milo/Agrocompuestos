@@ -2327,3 +2327,145 @@
   margin: 0;
   overflow: visible;
   clip: auto; }
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+.navbar.navbar-default {
+  margin: 0;
+  background-color: #ffffff; }
+  .navbar.navbar-default .navbar-brand {
+    text-indent: -99999px;
+    display: block;
+    width: 70px;
+    height: 67px;
+    background-image: url("../img/logo.png"); }
+  .navbar.navbar-default .menu-main-menu-container {
+    float: right; }
+    .navbar.navbar-default .menu-main-menu-container li.active a {
+      background-color: transparent; }
+
+.home .main-banner img,
+.home .main-banner > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: -1em; }
+
+@media (max-width: 768px) {
+  .home .main-banner > img {
+    display: none; } }
+
+.home .main-banner .mobile-banner {
+  display: none; }
+  @media (max-width: 768px) {
+    .home .main-banner .mobile-banner {
+      display: block; }
+      .home .main-banner .mobile-banner img {
+        margin: 0; } }
+
+.home .container.about {
+  margin-top: 3em;
+  margin-bottom: 2em; }
+  .home .container.about .about-img figure {
+    background-size: cover;
+    background-position: center center;
+    min-height: 300px; }
+    .home .container.about .about-img figure h2 {
+      font-weight: bold;
+      color: #ffffff;
+      text-align: center;
+      margin-top: 20%;
+      width: 100%;
+      text-transform: uppercase;
+      display: inline-block;
+      position: relative;
+      font-size: 2.5em; }
+      .home .container.about .about-img figure h2::after {
+        content: "";
+        display: block;
+        width: 120px;
+        height: 6px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        margin-left: -60px; }
+
+.home #productos {
+  padding: 3em 0;
+  background-color: #F2F2F2; }
+  .home #productos .product-icons .title {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-top: 60px;
+    color: #94C11F;
+    text-align: center; }
+    @media (max-width: 768px) {
+      .home #productos .product-icons .title {
+        margin-top: 1em; } }
+  .home #productos .product-icons .item {
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 1em; }
+    .home #productos .product-icons .item h3 {
+      text-align: center;
+      font-weight: bold;
+      color: #333333;
+      font-size: 1em; }
+    .home #productos .product-icons .item figure img {
+      display: block;
+      margin: 1em auto; }
+    .home #productos .product-icons .item > a {
+      display: block;
+      width: 100%;
+      max-width: 150px;
+      color: #ffffff;
+      background-color: #94C11F;
+      font-weight: bold;
+      text-align: center;
+      color: #ffffff;
+      padding: .5em;
+      margin: 1em auto; }
+
+.home #product-list .product {
+  overflow: hidden;
+  padding: 2em 0; }
+  .home #product-list .product .container > div {
+    width: 50%; }
+    .home #product-list .product .container > div.image-pr img {
+      margin: 1em auto;
+      max-width: 100%; }
+    .home #product-list .product .container > div.desc-prod h2 {
+      color: #94C11F;
+      margin-top: 2em; }
+    .home #product-list .product .container > div.desc-prod .menu-side {
+      border: 1px solid #e2e2e2;
+      box-shadow: 0 0 10px #F2F2F2;
+      background-color: white;
+      width: 90%; }
+      .home #product-list .product .container > div.desc-prod .menu-side h3 {
+        cursor: pointer;
+        margin: 0;
+        padding: .5em;
+        position: relative;
+        border-bottom: 1px solid #e2e2e2; }
+        .home #product-list .product .container > div.desc-prod .menu-side h3 i {
+          color: #94C11F;
+          position: absolute;
+          right: 1em;
+          top: 12px;
+          transform: rotate(180deg);
+          transition: all .3s; }
+        .home #product-list .product .container > div.desc-prod .menu-side h3.collapsed i {
+          transform: rotate(0deg);
+          transition: all .3s; }
+      .home #product-list .product .container > div.desc-prod .menu-side > div {
+        padding: 1em; }
+  .home #product-list .product:nth-child(even) {
+    background-color: #F2F2F2; }
+    .home #product-list .product:nth-child(even) .container > div {
+      float: left; }
+  .home #product-list .product:nth-child(odd) .container > div {
+    float: right; }

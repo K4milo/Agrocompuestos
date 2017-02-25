@@ -1,0 +1,25 @@
+.navbar {
+	&.navbar-default {
+		margin: 0;
+		background-color: $white;
+		//logo
+		.navbar-brand{
+			text-indent: -99999px;
+			display: block;
+			width: 70px;
+			height: 67px;
+			background-image: url('../img/logo.png');
+		}
+		//menu
+		.menu-main-menu-container {
+			float: right;
+			li{
+				&.active{
+					a {
+						background-color: transparent;
+					}
+				}
+			}
+		}
+	}
+}
