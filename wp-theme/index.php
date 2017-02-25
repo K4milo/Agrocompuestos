@@ -19,6 +19,12 @@
     
   </div><!-- /.row -->
 
+  <div class="row" id="contacto">
+	<!--contact form-->
+	<?php get_template_part('includes/components/contact'); ?>     
+    
+  </div><!-- /.row -->
+
 </div><!-- /.container -->
 
 <?php get_template_part('includes/footer'); ?>

@@ -1,0 +1,17 @@
+.site-footer{
+	background-color: black;
+	color: $white;
+	padding: 1em 0;
+	text-align: center;
+	line-height: 35px;
+	a {
+		color: $white;
+		padding-left: 40px;
+		background-image: url('../img/icons/facebook.png');
+		background-repeat: no-repeat;
+		background-position: left center;
+		line-height: 35px;
+		display: inline-block;
+		margin-left: 1em;
+	}
+}

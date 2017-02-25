@@ -2345,6 +2345,9 @@ body {
     float: right; }
     .navbar.navbar-default .menu-main-menu-container li.active a {
       background-color: transparent; }
+    @media (max-width: 768px) {
+      .navbar.navbar-default .menu-main-menu-container {
+        float: none; } }
 
 .home .main-banner img,
 .home .main-banner > img {
@@ -2434,6 +2437,9 @@ body {
   padding: 2em 0; }
   .home #product-list .product .container > div {
     width: 50%; }
+    @media (max-width: 768px) {
+      .home #product-list .product .container > div {
+        width: 100%; } }
     .home #product-list .product .container > div.image-pr img {
       margin: 1em auto;
       max-width: 100%; }
@@ -2445,12 +2451,17 @@ body {
       box-shadow: 0 0 10px #F2F2F2;
       background-color: white;
       width: 90%; }
+      @media (max-width: 768px) {
+        .home #product-list .product .container > div.desc-prod .menu-side {
+          width: 100%; } }
       .home #product-list .product .container > div.desc-prod .menu-side h3 {
         cursor: pointer;
         margin: 0;
         padding: .5em;
         position: relative;
-        border-bottom: 1px solid #e2e2e2; }
+        border-bottom: 1px solid #e2e2e2;
+        font-weight: bold;
+        font-size: 1.2em; }
         .home #product-list .product .container > div.desc-prod .menu-side h3 i {
           color: #94C11F;
           position: absolute;
@@ -2467,5 +2478,55 @@ body {
     background-color: #F2F2F2; }
     .home #product-list .product:nth-child(even) .container > div {
       float: left; }
+      @media (max-width: 768px) {
+        .home #product-list .product:nth-child(even) .container > div {
+          float: none; } }
   .home #product-list .product:nth-child(odd) .container > div {
     float: right; }
+    @media (max-width: 768px) {
+      .home #product-list .product:nth-child(odd) .container > div {
+        float: none; } }
+
+.home #contacto {
+  padding: 3em 0;
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center; }
+  .home #contacto p {
+    max-width: 340px;
+    margin: 3em auto; }
+  .home #contacto form p {
+    margin: 1em auto;
+    text-align: left; }
+    .home #contacto form p input {
+      color: #333333; }
+  .home #contacto ul {
+    padding: 0;
+    max-width: 960px;
+    margin: 2em auto; }
+    .home #contacto ul li {
+      list-style: none;
+      width: 33%;
+      display: inline-block; }
+      .home #contacto ul li img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 1em; }
+      .home #contacto ul li a {
+        color: #ffffff; }
+
+.site-footer {
+  background-color: black;
+  color: #ffffff;
+  padding: 1em 0;
+  text-align: center;
+  line-height: 35px; }
+  .site-footer a {
+    color: #ffffff;
+    padding-left: 40px;
+    background-image: url("../img/icons/facebook.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    line-height: 35px;
+    display: inline-block;
+    margin-left: 1em; }

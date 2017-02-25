@@ -1,6 +1,4 @@
 .home {
-	
-
 	//hero header
 	.main-banner{
 		img,
@@ -124,6 +122,9 @@
 			.container{
 				> div {
 					width: 50%;
+					@include mobile{
+						width: 100%;
+					}
 					//thumb
 					&.image-pr{
 						img {
@@ -144,12 +145,18 @@
 							box-shadow: 0 0 10px $gray;
 							background-color: white;
 							width: 90%;
+							@include mobile{
+								width: 100%;
+							}
+
 							h3{
 								cursor: pointer;
 								margin: 0;
 								padding: .5em;
 								position: relative;
 								border-bottom: 1px solid $gray-lt;
+								font-weight: bold;
+								font-size: 1.2em;
 								i {
 									color: $green;
 									position: absolute;
@@ -180,6 +187,9 @@
 				.container {
 					> div {
 						float: left;
+						@include mobile{
+							float: none;
+						}
 					}
 				}
 			}
@@ -188,9 +198,52 @@
 				.container {
 					> div {
 						float: right;
+						@include mobile{
+							float: none;
+						}
 					}
 				}
 			}
 		}
 	} //end of products
+	//contacto
+	#contacto {
+		padding: 3em 0;
+		background-color: $gray-bk;
+		color: $white;
+		text-align: center;
+		p{
+			max-width: 340px;
+			margin: 3em auto;
+		}
+		//form
+		form{
+			p{
+				margin: 1em auto;
+				text-align: left;
+				input{
+					color: $gray-bk;
+				}
+			}	
+		}
+		//list
+		ul{
+			padding: 0;
+			max-width: 960px;
+			margin: 2em auto;
+			li {
+				list-style: none;
+				width: 33%;
+				display: inline-block;
+				img {
+					display: inline-block;
+					vertical-align: middle;
+					margin-right: 1em;
+				}
+				a {
+					color: $white;
+				}
+			}
+		}
+	} //end of contact
 }

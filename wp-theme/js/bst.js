@@ -27,7 +27,24 @@
 				return false;
 			  }
 			}
-		  });
+		});
+
+		//Menu scroll
+
+		$(window).scroll(function() {
+			
+			var navBar = $('.navbar').height();
+
+			if($(window).scrollTop() > navBar){
+
+				$('.navbar').addClass('navbar-fixed-top');
+			
+			} else {
+				
+				$('.navbar').removeClass('navbar-fixed-top');
+			
+			}
+		});
 
 	});
 
