@@ -218,6 +218,7 @@
 		}
 		//form
 		form{
+			display: none;
 			p{
 				margin: 1em auto;
 				text-align: left;
@@ -246,4 +247,59 @@
 			}
 		}
 	} //end of contact
+
+	#centro {
+		background-color: $green;
+		text-align: center;
+		padding: 2em 0 0;
+		header {
+			h2 {
+				color: $white;
+				font-weight: bold;
+			}
+		}
+
+		//tabs
+		.nav.nav-tabs{
+			 border: none;
+			 padding: 0;
+			 li{
+			 	float: none;
+			 	display: inline-block;
+			 	margin: 1em 3em;
+			 	a {
+			 		padding: .5em 3em;
+			 		border: none;
+			 		background-color: $white;
+			 		color: $green;
+			 	}
+
+			 	&.active {
+			 		a {
+			 			background-color: $gray-med;
+			 			color: $white;
+			 		}
+			 	}
+			}
+		}
+		// tab content
+		.tab-content {
+			background-color: $gray-bk;
+			padding: 1em;
+			.tab-pane {
+				max-width: 800px;
+				margin: 1em auto;
+				iframe,
+				img {
+					width: 100%;
+				}
+				ul {
+					padding:0;
+					li {
+						min-height: 400px;
+					}
+				}
+			}
+		}
+	}
 }

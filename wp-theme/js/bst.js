@@ -16,7 +16,7 @@
 
 		//scrollto
 
-		$('a[href*="#"]:not([href="#"])').click(function() {
+		$('#menu-main-menu a[href*="#"]:not([href="#"])').click(function() {
 			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 			  var target = $(this.hash);
 			  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -28,6 +28,15 @@
 			  }
 			}
 		});
+
+		$('.slider-bottom').slick({
+			dots: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 1,
+			adaptiveHeight: true
+		});
+
 
 		//Menu scroll
 

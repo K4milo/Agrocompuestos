@@ -2495,11 +2495,13 @@ body {
   .home #contacto p {
     max-width: 340px;
     margin: 3em auto; }
-  .home #contacto form p {
-    margin: 1em auto;
-    text-align: left; }
-    .home #contacto form p input {
-      color: #333333; }
+  .home #contacto form {
+    display: none; }
+    .home #contacto form p {
+      margin: 1em auto;
+      text-align: left; }
+      .home #contacto form p input {
+        color: #333333; }
   .home #contacto ul {
     padding: 0;
     max-width: 960px;
@@ -2514,6 +2516,42 @@ body {
         margin-right: 1em; }
       .home #contacto ul li a {
         color: #ffffff; }
+
+.home #centro {
+  background-color: #94C11F;
+  text-align: center;
+  padding: 2em 0 0; }
+  .home #centro header h2 {
+    color: #ffffff;
+    font-weight: bold; }
+  .home #centro .nav.nav-tabs {
+    border: none;
+    padding: 0; }
+    .home #centro .nav.nav-tabs li {
+      float: none;
+      display: inline-block;
+      margin: 1em 3em; }
+      .home #centro .nav.nav-tabs li a {
+        padding: .5em 3em;
+        border: none;
+        background-color: #ffffff;
+        color: #94C11F; }
+      .home #centro .nav.nav-tabs li.active a {
+        background-color: #8C8C8C;
+        color: #ffffff; }
+  .home #centro .tab-content {
+    background-color: #333333;
+    padding: 1em; }
+    .home #centro .tab-content .tab-pane {
+      max-width: 800px;
+      margin: 1em auto; }
+      .home #centro .tab-content .tab-pane iframe,
+      .home #centro .tab-content .tab-pane img {
+        width: 100%; }
+      .home #centro .tab-content .tab-pane ul {
+        padding: 0; }
+        .home #centro .tab-content .tab-pane ul li {
+          min-height: 400px; }
 
 .site-footer {
   background-color: black;

@@ -19,11 +19,18 @@
     
   </div><!-- /.row -->
 
+  <div class="row" id="centro">
+	<!--contact form-->
+	<?php get_template_part('includes/components/tabs'); ?>     
+    
+  </div><!-- /.row -->
+
   <div class="row" id="contacto">
 	<!--contact form-->
 	<?php get_template_part('includes/components/contact'); ?>     
     
   </div><!-- /.row -->
+
 
 </div><!-- /.container -->
 
