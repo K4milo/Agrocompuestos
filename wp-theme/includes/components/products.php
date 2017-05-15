@@ -25,7 +25,7 @@
 					<h2><?php the_title(); ?></h2>
 
 					<div class="menu-side">
-						<h3 data-toggle="collapse" data-target="#uso-<?php the_ID(); ?>">¿Cómo se usa?  <i class="fa fa-caret-down" aria-hidden="true"></i></h3>
+						<h3 data-toggle="collapse" data-target="#uso-<?php the_ID(); ?>">¿Qué es? <i class="fa fa-caret-down" aria-hidden="true"></i></h3>
 						<div id="uso-<?php the_ID(); ?>" class="collapse">
 								<?php echo types_render_field('uso'); ?>
 						</div>
